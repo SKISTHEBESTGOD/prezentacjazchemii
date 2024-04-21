@@ -1,0 +1,143 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Podstawowe style dla body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Wybór czcionki */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Jasny kolor tła */
+    color: #495057; /* Ciemny kolor tekstu */
+    line-height: 1.6; /* Wysokość wiersza */
+}
+
+/* Styl dla kontenera strony */
+.container {
+    width: 90%; /* Szerokość kontenera */
+    max-width: 1200px; /* Maksymalna szerokość */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styl dla nagłówka strony */
+header {
+    background-color: #343a40; /* Ciemny niebieski kolor tła */
+    color: #fff; /* Biały kolor tekstu */
+    padding: 40px 0; /* Wewnętrzny odstęp */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+/* Styl dla tytułów */
+h1, h2, h3 {
+    color: #212529; /* Ciemny kolor tekstu */
+    margin-bottom: 20px; /* Margines dolny */
+    text-transform: uppercase; /* Wielkie litery */
+}
+
+/* Styl dla głównego nagłówka */
+h1 {
+    font-size: 36px; /* Rozmiar czcionki */
+    font-weight: bold; /* Pogrubienie */
+}
+
+/* Styl dla podtytułów */
+h2 {
+    font-size: 24px; /* Rozmiar czcionki */
+}
+
+/* Styl dla treści */
+p {
+    font-size: 20px; /* Rozmiar czcionki */
+    line-height: 1.8; /* Wysokość wiersza */
+}
+
+/* Styl dla głównej treści */
+main {
+    padding: 20px 0; /* Wewnętrzny odstęp */
+}
+
+/* Styl dla sekcji z wydarzeniami */
+.events {
+    background-color: #fff; /* Biały kolor tła */
+    border-radius: 12px; /* Zaokrąglenie rogów */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lekki cień */
+    padding: 30px; /* Wewnętrzny odstęp */
+}
+
+/* Styl dla pojedynczego wydarzenia */
+.event {
+    margin-bottom: 30px; /* Margines dolny */
+    border-bottom: 2px solid #dee2e6; /* Jasny kolor oddzielającej linii */
+    padding-bottom: 30px; /* Wewnętrzny odstęp na dole */
+    margin-left: 40px; /* Margines lewy */
+}
+
+/* Styl dla stopki strony */
+footer {
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 30px 0; /* Wewnętrzny odstęp */
+    background-color: #343a40; /* Ciemny niebieski kolor tła */
+    color: #fff; /* Biały kolor tekstu */
+}
+
+/* Styl dla linków */
+a {
+    text-decoration: none; /* Usunięcie domyślnego podkreślenia */
+    color: #007bff; /* Jasny niebieski kolor tekstu */
+    transition: color 0.3s ease; /* Płynne przejście koloru */
+}
+
+/* Styl dla linków po najechaniu myszką */
+a:hover {
+    color: #0056b3; /* Jasnoniebieski kolor tekstu po najechaniu */
+}
+
+/* Styl dla linku "Powrót do menu głównego" */
+a.return-to-main-menu {
+    color: #007bff; /* Jasny niebieski kolor tekstu */
+    text-decoration: none; /* Usunięcie domyślnego podkreślenia */
+    font-weight: bold; /* Pogrubienie tekstu */
+    transition: color 0.3s ease; /* Płynne przejście koloru */
+    position: relative; /* Pozycjonowanie */
+}
+
+/* Styl dla linku "Powrót do menu głównego" po najechaniu myszką */
+a.return-to-main-menu:hover {
+    color: #0056b3; /* Jasnoniebieski kolor tekstu po najechaniu */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Lekki cień tekstu */
+}
+
+/* Styl dla linku "Powrót do menu głównego" po kliknięciu */
+a.return-to-main-menu:active {
+    color: #0056b3; /* Jasnoniebieski kolor tekstu po kliknięciu */
+}
+
+/* Styl dla odwiedzonego linku "Powrót do menu głównego" */
+a.return-to-main-menu:visited {
+    color: #6c757d; /* Ciemnoszary kolor tekstu dla odwiedzonych linków */
+}
+
+/* Styl dla linku z ikoną po najechaniu myszką */
+a.icon:hover::after {
+    color: #007bff; /* Jasny niebieski kolor ikony po najechaniu */
+}
+
+/* Animacje dla linków */
+a.return-to-main-menu::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+a.return-to-main-menu:hover::after {
+    background-color: #007bff; /* Jasny niebieski kolor podkreślenia po najechaniu */
+}
